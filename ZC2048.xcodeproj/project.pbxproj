@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32FD8C531EEE2C6300CCD343 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FD8C521EEE2C6300CCD343 /* main.m */; };
+		32FD8C561EEE2C6300CCD343 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FD8C551EEE2C6300CCD343 /* AppDelegate.m */; };
+		32FD8C591EEE2C6300CCD343 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FD8C581EEE2C6300CCD343 /* ViewController.m */; };
+		32FD8C5C1EEE2C6300CCD343 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32FD8C5A1EEE2C6300CCD343 /* Main.storyboard */; };
+		32FD8C5E1EEE2C6300CCD343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32FD8C5D1EEE2C6300CCD343 /* Assets.xcassets */; };
+		32FD8C611EEE2C6300CCD343 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32FD8C5F1EEE2C6300CCD343 /* LaunchScreen.storyboard */; };
+		32FD8C6C1EEE2C6300CCD343 /* ZC2048Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FD8C6B1EEE2C6300CCD343 /* ZC2048Tests.m */; };
+		32FD8C771EEE2C6300CCD343 /* ZC2048UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FD8C761EEE2C6300CCD343 /* ZC2048UITests.m */; };
+		32FD8C891EEE305400CCD343 /* merge.wav in Resources */ = {isa = PBXBuildFile; fileRef = 32FD8C861EEE305400CCD343 /* merge.wav */; };
+		32FD8C8A1EEE305400CCD343 /* move.wav in Resources */ = {isa = PBXBuildFile; fileRef = 32FD8C871EEE305400CCD343 /* move.wav */; };
+		32FD8C8D1EEE31C700CCD343 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FD8C8C1EEE31C700CCD343 /* GameViewController.m */; };
+		32FD8C901EEE331700CCD343 /* UIFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FD8C8F1EEE331700CCD343 /* UIFactory.m */; };
+		32FD8C991EEE5C0700CCD343 /* Mark.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FD8C981EEE5C0700CCD343 /* Mark.m */; };
+		32FD8C9C1EEE621D00CCD343 /* cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 32FD8C9B1EEE621D00CCD343 /* cat.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32FD8C681EEE2C6300CCD343 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32FD8C461EEE2C6300CCD343 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32FD8C4D1EEE2C6300CCD343;
+			remoteInfo = ZC2048;
+		};
+		32FD8C731EEE2C6300CCD343 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32FD8C461EEE2C6300CCD343 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32FD8C4D1EEE2C6300CCD343;
+			remoteInfo = ZC2048;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32FD8C4E1EEE2C6300CCD343 /* ZC2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZC2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32FD8C521EEE2C6300CCD343 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32FD8C541EEE2C6300CCD343 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		32FD8C551EEE2C6300CCD343 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		32FD8C571EEE2C6300CCD343 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		32FD8C581EEE2C6300CCD343 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		32FD8C5B1EEE2C6300CCD343 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32FD8C5D1EEE2C6300CCD343 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32FD8C601EEE2C6300CCD343 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		32FD8C621EEE2C6300CCD343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32FD8C671EEE2C6300CCD343 /* ZC2048Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZC2048Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32FD8C6B1EEE2C6300CCD343 /* ZC2048Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZC2048Tests.m; sourceTree = "<group>"; };
+		32FD8C6D1EEE2C6300CCD343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32FD8C721EEE2C6300CCD343 /* ZC2048UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZC2048UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32FD8C761EEE2C6300CCD343 /* ZC2048UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZC2048UITests.m; sourceTree = "<group>"; };
+		32FD8C781EEE2C6300CCD343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32FD8C861EEE305400CCD343 /* merge.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = merge.wav; sourceTree = "<group>"; };
+		32FD8C871EEE305400CCD343 /* move.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = move.wav; sourceTree = "<group>"; };
+		32FD8C8B1EEE31C700CCD343 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		32FD8C8C1EEE31C700CCD343 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		32FD8C8E1EEE331700CCD343 /* UIFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFactory.h; sourceTree = "<group>"; };
+		32FD8C8F1EEE331700CCD343 /* UIFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFactory.m; sourceTree = "<group>"; };
+		32FD8C971EEE5C0700CCD343 /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
+		32FD8C981EEE5C0700CCD343 /* Mark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mark.m; sourceTree = "<group>"; };
+		32FD8C9A1EEE5CB600CCD343 /* Prefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.h; sourceTree = "<group>"; };
+		32FD8C9B1EEE621D00CCD343 /* cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cat.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32FD8C4B1EEE2C6300CCD343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32FD8C641EEE2C6300CCD343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32FD8C6F1EEE2C6300CCD343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32FD8C451EEE2C6300CCD343 = {
+			isa = PBXGroup;
+			children = (
+				32FD8C501EEE2C6300CCD343 /* ZC2048 */,
+				32FD8C6A1EEE2C6300CCD343 /* ZC2048Tests */,
+				32FD8C751EEE2C6300CCD343 /* ZC2048UITests */,
+				32FD8C4F1EEE2C6300CCD343 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32FD8C4F1EEE2C6300CCD343 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32FD8C4E1EEE2C6300CCD343 /* ZC2048.app */,
+				32FD8C671EEE2C6300CCD343 /* ZC2048Tests.xctest */,
+				32FD8C721EEE2C6300CCD343 /* ZC2048UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32FD8C501EEE2C6300CCD343 /* ZC2048 */ = {
+			isa = PBXGroup;
+			children = (
+				32FD8C841EEE305400CCD343 /* Resource */,
+				32FD8C541EEE2C6300CCD343 /* AppDelegate.h */,
+				32FD8C551EEE2C6300CCD343 /* AppDelegate.m */,
+				32FD8C571EEE2C6300CCD343 /* ViewController.h */,
+				32FD8C581EEE2C6300CCD343 /* ViewController.m */,
+				32FD8C8B1EEE31C700CCD343 /* GameViewController.h */,
+				32FD8C8C1EEE31C700CCD343 /* GameViewController.m */,
+				32FD8C8E1EEE331700CCD343 /* UIFactory.h */,
+				32FD8C8F1EEE331700CCD343 /* UIFactory.m */,
+				32FD8C971EEE5C0700CCD343 /* Mark.h */,
+				32FD8C981EEE5C0700CCD343 /* Mark.m */,
+				32FD8C511EEE2C6300CCD343 /* Supporting Files */,
+			);
+			path = ZC2048;
+			sourceTree = "<group>";
+		};
+		32FD8C511EEE2C6300CCD343 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32FD8C5D1EEE2C6300CCD343 /* Assets.xcassets */,
+				32FD8C5A1EEE2C6300CCD343 /* Main.storyboard */,
+				32FD8C5F1EEE2C6300CCD343 /* LaunchScreen.storyboard */,
+				32FD8C621EEE2C6300CCD343 /* Info.plist */,
+				32FD8C521EEE2C6300CCD343 /* main.m */,
+				32FD8C9A1EEE5CB600CCD343 /* Prefix.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32FD8C6A1EEE2C6300CCD343 /* ZC2048Tests */ = {
+			isa = PBXGroup;
+			children = (
+				32FD8C6B1EEE2C6300CCD343 /* ZC2048Tests.m */,
+				32FD8C6D1EEE2C6300CCD343 /* Info.plist */,
+			);
+			path = ZC2048Tests;
+			sourceTree = "<group>";
+		};
+		32FD8C751EEE2C6300CCD343 /* ZC2048UITests */ = {
+			isa = PBXGroup;
+			children = (
+				32FD8C761EEE2C6300CCD343 /* ZC2048UITests.m */,
+				32FD8C781EEE2C6300CCD343 /* Info.plist */,
+			);
+			path = ZC2048UITests;
+			sourceTree = "<group>";
+		};
+		32FD8C841EEE305400CCD343 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				32FD8C9B1EEE621D00CCD343 /* cat.wav */,
+				32FD8C861EEE305400CCD343 /* merge.wav */,
+				32FD8C871EEE305400CCD343 /* move.wav */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32FD8C4D1EEE2C6300CCD343 /* ZC2048 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32FD8C7B1EEE2C6300CCD343 /* Build configuration list for PBXNativeTarget "ZC2048" */;
+			buildPhases = (
+				32FD8C4A1EEE2C6300CCD343 /* Sources */,
+				32FD8C4B1EEE2C6300CCD343 /* Frameworks */,
+				32FD8C4C1EEE2C6300CCD343 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZC2048;
+			productName = ZC2048;
+			productReference = 32FD8C4E1EEE2C6300CCD343 /* ZC2048.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32FD8C661EEE2C6300CCD343 /* ZC2048Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32FD8C7E1EEE2C6300CCD343 /* Build configuration list for PBXNativeTarget "ZC2048Tests" */;
+			buildPhases = (
+				32FD8C631EEE2C6300CCD343 /* Sources */,
+				32FD8C641EEE2C6300CCD343 /* Frameworks */,
+				32FD8C651EEE2C6300CCD343 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32FD8C691EEE2C6300CCD343 /* PBXTargetDependency */,
+			);
+			name = ZC2048Tests;
+			productName = ZC2048Tests;
+			productReference = 32FD8C671EEE2C6300CCD343 /* ZC2048Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		32FD8C711EEE2C6300CCD343 /* ZC2048UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32FD8C811EEE2C6300CCD343 /* Build configuration list for PBXNativeTarget "ZC2048UITests" */;
+			buildPhases = (
+				32FD8C6E1EEE2C6300CCD343 /* Sources */,
+				32FD8C6F1EEE2C6300CCD343 /* Frameworks */,
+				32FD8C701EEE2C6300CCD343 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32FD8C741EEE2C6300CCD343 /* PBXTargetDependency */,
+			);
+			name = ZC2048UITests;
+			productName = ZC2048UITests;
+			productReference = 32FD8C721EEE2C6300CCD343 /* ZC2048UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32FD8C461EEE2C6300CCD343 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = GeezerChao;
+				TargetAttributes = {
+					32FD8C4D1EEE2C6300CCD343 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					32FD8C661EEE2C6300CCD343 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 32FD8C4D1EEE2C6300CCD343;
+					};
+					32FD8C711EEE2C6300CCD343 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 32FD8C4D1EEE2C6300CCD343;
+					};
+				};
+			};
+			buildConfigurationList = 32FD8C491EEE2C6300CCD343 /* Build configuration list for PBXProject "ZC2048" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32FD8C451EEE2C6300CCD343;
+			productRefGroup = 32FD8C4F1EEE2C6300CCD343 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32FD8C4D1EEE2C6300CCD343 /* ZC2048 */,
+				32FD8C661EEE2C6300CCD343 /* ZC2048Tests */,
+				32FD8C711EEE2C6300CCD343 /* ZC2048UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32FD8C4C1EEE2C6300CCD343 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32FD8C611EEE2C6300CCD343 /* LaunchScreen.storyboard in Resources */,
+				32FD8C5E1EEE2C6300CCD343 /* Assets.xcassets in Resources */,
+				32FD8C8A1EEE305400CCD343 /* move.wav in Resources */,
+				32FD8C9C1EEE621D00CCD343 /* cat.wav in Resources */,
+				32FD8C891EEE305400CCD343 /* merge.wav in Resources */,
+				32FD8C5C1EEE2C6300CCD343 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32FD8C651EEE2C6300CCD343 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32FD8C701EEE2C6300CCD343 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32FD8C4A1EEE2C6300CCD343 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32FD8C8D1EEE31C700CCD343 /* GameViewController.m in Sources */,
+				32FD8C591EEE2C6300CCD343 /* ViewController.m in Sources */,
+				32FD8C991EEE5C0700CCD343 /* Mark.m in Sources */,
+				32FD8C901EEE331700CCD343 /* UIFactory.m in Sources */,
+				32FD8C561EEE2C6300CCD343 /* AppDelegate.m in Sources */,
+				32FD8C531EEE2C6300CCD343 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32FD8C631EEE2C6300CCD343 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32FD8C6C1EEE2C6300CCD343 /* ZC2048Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32FD8C6E1EEE2C6300CCD343 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32FD8C771EEE2C6300CCD343 /* ZC2048UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32FD8C691EEE2C6300CCD343 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32FD8C4D1EEE2C6300CCD343 /* ZC2048 */;
+			targetProxy = 32FD8C681EEE2C6300CCD343 /* PBXContainerItemProxy */;
+		};
+		32FD8C741EEE2C6300CCD343 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32FD8C4D1EEE2C6300CCD343 /* ZC2048 */;
+			targetProxy = 32FD8C731EEE2C6300CCD343 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32FD8C5A1EEE2C6300CCD343 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32FD8C5B1EEE2C6300CCD343 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		32FD8C5F1EEE2C6300CCD343 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32FD8C601EEE2C6300CCD343 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32FD8C791EEE2C6300CCD343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		32FD8C7A1EEE2C6300CCD343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32FD8C7C1EEE2C6300CCD343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZC2048/Prefix.h";
+				INFOPLIST_FILE = ZC2048/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geezer.ZC2048;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		32FD8C7D1EEE2C6300CCD343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZC2048/Prefix.h";
+				INFOPLIST_FILE = ZC2048/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geezer.ZC2048;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		32FD8C7F1EEE2C6300CCD343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZC2048Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geezer.ZC2048Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZC2048.app/ZC2048";
+			};
+			name = Debug;
+		};
+		32FD8C801EEE2C6300CCD343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZC2048Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geezer.ZC2048Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZC2048.app/ZC2048";
+			};
+			name = Release;
+		};
+		32FD8C821EEE2C6300CCD343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZC2048UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geezer.ZC2048UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZC2048;
+			};
+			name = Debug;
+		};
+		32FD8C831EEE2C6300CCD343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZC2048UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geezer.ZC2048UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZC2048;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32FD8C491EEE2C6300CCD343 /* Build configuration list for PBXProject "ZC2048" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32FD8C791EEE2C6300CCD343 /* Debug */,
+				32FD8C7A1EEE2C6300CCD343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32FD8C7B1EEE2C6300CCD343 /* Build configuration list for PBXNativeTarget "ZC2048" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32FD8C7C1EEE2C6300CCD343 /* Debug */,
+				32FD8C7D1EEE2C6300CCD343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32FD8C7E1EEE2C6300CCD343 /* Build configuration list for PBXNativeTarget "ZC2048Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32FD8C7F1EEE2C6300CCD343 /* Debug */,
+				32FD8C801EEE2C6300CCD343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32FD8C811EEE2C6300CCD343 /* Build configuration list for PBXNativeTarget "ZC2048UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32FD8C821EEE2C6300CCD343 /* Debug */,
+				32FD8C831EEE2C6300CCD343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32FD8C461EEE2C6300CCD343 /* Project object */;
+}
